@@ -1,0 +1,315 @@
+/* 
+Medium stylesheet
+ 
+1 Layout
+2 Backgrounds
+3 Navigation
+4 Typography 
+5 Links
+
+/* -------------------------------------------------------------------------------------- 
+Layout - border-radius ie9+ :content after tab indicators ie8+
+-------------------------------------------------------------------------------------- */
+body {
+width:96em;
+max-width:100%;
+margin:0 auto;
+padding:0;
+}
+
+.ie6 body {position:relative;}
+
+ul#access{
+margin:0 5%;
+padding:0.5em 0 0 0;
+}
+
+ul#access li {
+text-align:right;
+}
+
+ul#access li a {
+float:right;
+display:block;
+}
+
+#wrapper {
+margin:1em 4%;
+box-shadow: 0 0 20px #333;
+}
+
+header[role] {
+border-top-right-radius:4px;
+border-top-left-radius:4px;
+background-size: auto;
+}
+
+header[role] #search {float:right;}
+#logo {
+float:left;
+}
+
+#main article {
+position:relative;
+}
+
+#main article aside {
+position:absolute;
+padding: 0.7em 1% 0.9em;
+left:-18%;
+top:-0.7em;
+width:8%;
+background: #fff;
+background: -moz-linear-gradient(left,  rgba(227,238,242,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(227,238,242,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(left,  rgba(227,238,242,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(left,  rgba(227,238,242,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(left,  rgba(227,238,242,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+
+background: linear-gradient(left,  rgba(227,238,242,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3eef2', endColorstr='#00ffffff',GradientType=1 );  IE6-9 buggy ie8? so not using */
+
+border-radius:4px;
+box-shadow:1px 1px 5px #DDDFEB;
+}
+
+.ie6 #main article aside{ 
+left:-14%;
+}
+
+
+footer[role] {
+border-bottom-right-radius:4px;
+border-bottom-left-radius:4px;
+}
+
+.gutter {
+padding:0 11%;
+}
+
+header[role] .gutter {
+padding:0;
+}
+
+footer[role] .gutter {
+padding:0 1%;
+}
+#searchbox{
+width:auto;}
+
+/* -------------------------------------------------------------------------------------- 
+Backgrounds
+-------------------------------------------------------------------------------------- */
+body {
+background:#ccc;
+}
+aside#page {
+color:#000;
+background-color:#eee;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Navigation 
+-------------------------------------------------------------------------------------- */
+nav {
+padding-top:0.8em;
+padding-left:1em;
+float:left;
+display:inline;
+}
+
+nav ul#navigation li {
+float:left;
+position:relative;
+}
+
+nav ul#navigation li a {
+float:left;display:inline;
+/*clear:both;*/
+border-radius:none;
+border:none;
+margin:0;
+-webkit-transition:all .3s ease-in-out;
+-moz-transition:all .3s ease-in-out;
+-o-transition:all .3s ease-in-out;
+transition:all .3s ease-in-out; 
+ 
+}
+nav ul#navigation li#menu-item-135 a,   nav ul#navigation li#menu-item-454  a {
+background-position:8px -68px;
+}
+
+nav ul#navigation li#menu-item-137, nav ul#navigation li#menu-item-451   a{
+background-position:8px -37px;
+}
+
+nav ul#navigation li#menu-item-136 a {
+background-position:8px -10px;
+}
+
+nav ul#navigation li#menu-item-175 a , nav ul#navigation li#menu-item-171 a {
+background-position:8px -98px;
+}
+
+nav ul#navigation li + li + li + li + li {
+margin-right:0;
+}
+
+.ie6 nav 
+{
+width:60%;
+}
+
+/* add tab indicators - buggy ie8? */
+.current_page_item a:after {
+content:'';
+height:0;
+width:0;
+position:absolute;
+border:10px solid transparent;
+/*border-top-color:#transparent;*/
+border-top-color:rgba(255,255,255,0.15);
+top:100%;
+left:50%;
+display:block;
+margin-left:-10px;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Typography
+-------------------------------------------------------------------------------------- */
+nav ul#navigation li a {
+margin:0 0 0 5px;
+padding:.5em 6px .5em 28px;
+font-size:.8em;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+line-height:1.2;
+border-radius:14px; 
+text-transform:uppercase;
+}
+
+.ie6 nav ul#navigation li a {
+font-size:0.8em;
+}
+
+#main p {
+margin-top:0;
+}
+
+#main ul,#main ol {
+margin:1em 0;
+}
+
+aside#page  h2 {
+font-size:1.6em;
+margin:1em 0 .4em;
+}
+
+#main article aside {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+line-height:1.3;
+font-size:.8em;
+}
+
+#main article aside .date {
+text-transform: uppercase;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#555;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Links
+-------------------------------------------------------------------------------------- */
+aside#page a:hover {
+background-color:#ccc;
+}
+#main article aside a:link,#main article aside a:visited {
+color:#555;
+}
+
+#main article aside a:hover,#main article aside a:focus {
+color:#fff;
+} 
+
+#main article aside a{
+color:#333;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Images 2d transforms, box-shadow - ie9+
+-------------------------------------------------------------------------------------- */
+.left {
+float:left;
+}
+
+.right {
+float:right;
+}
+
+.wide {
+width:70%;
+}
+
+/* necessary to specify width or div will go to 100% even tho floated */
+.total {
+width:100%;
+}
+
+.half {
+width:25%;
+}
+
+.figure img {
+max-width:100%;
+border:1px solid #ccc;
+padding:5px;
+margin:5px;
+box-shadow:4px 4px 3px #666;
+}
+
+/* portfolio page image rotations on hover */
+.rotateRight {
+-moz-transform:rotate(-4deg) scale(1);
+-ms-transform:rotate(-4deg) scale(1);
+-webkit-transform:rotate(-4deg) scale(1);
+-webkit-transition:all .3s ease-in;
+}
+
+.rotateLeft {
+-moz-transform:rotate(4deg) scale(1);
+-ms-transform:rotate(-4deg) scale(1);
+-webkit-transform:rotate(4deg) scale(1);
+-webkit-transition:all .3s ease-in;
+}
+
+.rotateRight:hover {
+-moz-transform:rotate(4deg) scale(1);
+-ms-transform:rotate(-4deg) scale(1);
+-webkit-transform:rotate(4deg) scale(1);
+cursor: pointer;
+}
+
+.rotateLeft:hover {
+-moz-transform:rotate(-4deg) scale(1);
+-ms-transform:rotate(-4deg) scale(1);
+-webkit-transform:rotate(-4deg) scale(1);
+cursor: pointer;
+}
+
+#main .figure p.rite {
+margin-left:62%;
+}
+
+#main .figure p.lef {
+margin-right:40%;
+}
+
+#main .figure p {
+margin-top:65px;
+}
+

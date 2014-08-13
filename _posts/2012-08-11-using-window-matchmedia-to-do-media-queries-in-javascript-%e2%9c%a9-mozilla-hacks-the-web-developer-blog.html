@@ -1,0 +1,32 @@
+---
+layout: post
+title: window.matchMedia
+date: 2012-08-11 10:59:43.000000000 +10:00
+categories: []
+tags:
+- javascript
+- responsive
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: chris.chudleigh@gmail.com
+  display_name: chris
+  first_name: chris
+  last_name: ''
+---
+<p>The way to approch media queries in JavaScript is through window.matchMedia. Basically, you just use the same approach as with CSS, but with a JavaScript call:<!--more--></p>
+<p><code>var widthQuery = window.matchMedia("(min-width: 600px)");</code></p>
+<p>This query returns a MediaQueryList object, on which you can do a few things:</p>
+<p>matches</p>
+<p>Boolean whether the query matched or not.</p>
+<p>media</p>
+<p>Serialized media query list.</p>
+<p>addListener</p>
+<p>Adding event listener to a media query. Much preferred over polling values or similar.</p>
+<p>removeListener</p>
+<p>Removing event listener from a media query.</p>
+<p>via <a href="https://hacks.mozilla.org/2012/06/using-window-matchmedia-to-do-media-queries-in-javascript/">Using window.matchMedia to do media queries in JavaScript ✩ Mozilla Hacks – the Web developer blog</a>.</p>

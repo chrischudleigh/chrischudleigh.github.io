@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="css/main.css" >
-    </head>
-    <body>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<title>{{ page.title }}</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Notes on accessibility, usability, web standards, web design, and web development" />
+	<meta name="author" content="Chris Chudleigh" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen, projection" href="/css/style.css" />
+    <link rel="stylesheet" media="only all and (min-width: 680px)" href="/css/medium.css" />
+    <link rel="stylesheet" media="only all and (min-width: 860px)" href="/css/large.css" />
+    <!--[if lt IE 9]>
+    	<link rel="stylesheet" media="screen" href="/css/medium.css" />
+		<link rel="stylesheet" media="screen" href="/css/large.css" />
+    <![endif]-->
+	<link rel="stylesheet" media="print" href="/css/print.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <!-- Site uses:
+    Validated HTML5 
+    CSS3
+    	transitions
+    	border-radius
+    	rgba
+    	text-shadow
+    	flexible images
+    	png images
+    	svg as background
+    	background-size
+    	box-shadow
+    	transform
+        selectors
+        gradients
+    Google fonts
+    Responsive design
+    	media queries
+    Accessibility features
+    	skip links
+        aria roles
+        using hover and focus styles
+    -->
+<!-- enable HTML5 elements in IE7+8 -->
+<!--[if lt IE 9]>
+<script src="/js/html5shiv.js"></script>
+<script src="/js/jquery-1.6.2.min.js"></script>
+<script src="/js/selectivizr-min.js"></script>
+<![endif]-->
+</head>
+
+<body id="">
+<!-- skip links required for ie8 and below -->
+<ul id="access" class="group"><li><a href="#main">Skip to main content</a></li></ul>
+<div id="wrapper">
+	<header role="banner" class="group">
+  		<div class="gutter group">
+    	<div id="logo">
+    		<a href=""><img src="/images/logo-obwd2.png" alt="Logo" width="58" height="27"/></a>
+			<h1><a href="">My blog</a></h1>
+    	</div>
+        <div id="search"><form method="get" id="searchform" action="/">
+<input type="text" size="15" id="searchbox" value=""  name="s" />
+<input type="submit" id="searchsubmit" value="Search" class="btn" />
+</form>
+</div>
         
-        
+        <h2 class="structural">Main navigation</h2>
+	  <nav class="nav-primary" role="navigation" class="group">
+    <ul id="navigation" >
+        {% for p in site.pages %}
+        <li>
+        	<a {% if p.url == page.url %}class="active group"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+		</nav>
+        </div>
+	</header>
+<div id="content" class="group">
+  <div id="main" role="main" class="group">
+	<div class="gutter group">
+       <h2 class="structural">Main content</h2>

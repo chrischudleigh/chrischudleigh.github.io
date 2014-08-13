@@ -1,0 +1,50 @@
+---
+layout: post
+title: Web Storage
+date: 2012-04-21 15:01:13.000000000 +10:00
+categories: []
+tags:
+- html5
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: chris.chudleigh@gmail.com
+  display_name: chris
+  first_name: chris
+  last_name: ''
+---
+<p><strong>Local storage</strong></p>
+<ul>
+<li>Store data for your entire website permanently</li>
+</ul>
+<p><!--more--><br />
+<strong>Session storage</strong></p>
+<ul>
+<li>Store data for your website for a tab or single window. Expires when tab/window closed but remains if user travels to another website.</li>
+</ul>
+<ul>
+<li>Both are linked to your domain<br />
+ie. available on all pages on your domain</li>
+<li>Browser specific</li>
+</ul>
+<p><strong>Set</strong></p>
+<p>localStorage["user_name"]="Chris Chudleigh";</p>
+<p><strong>Get</strong></p>
+<p>var x=localStorage["user_name"];</p>
+<p><strong>Example:</strong></p>
+<p>if (localStorage["user_name"] == null) { alert ("You haven't entered a name yet.");}<br />
+else {// Put the name into a text box<br />
+. document.getElementById("userName").value = localStorage["user_name"];}</p>
+<p>// Get the current date. var today = new Date();<br />
+// Store the time as a piece of text in the form HH:mm.<br />
+sessionStorage["lastUpdateTime"] = today.getHours() + ":" + today.get- Minutes();</p>
+<p><strong> Support</strong></p>
+<p>ie8+ and modern browsers<br />
+requires web server<br />
+can use JSON format</p>
+<p><strong>Events</strong></p>
+<p><em>window.onStorage fired in all tabs/windows @ current site</em></p>

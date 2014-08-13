@@ -1,0 +1,30 @@
+---
+layout: post
+title: Hover intent
+date: 2012-04-07 18:53:33.000000000 +10:00
+categories: []
+tags:
+- jquery menu
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: chris.chudleigh@gmail.com
+  display_name: chris
+  first_name: chris
+  last_name: ''
+---
+<p>Hover intent is a jquery plugin which causes dropdown menus to only activate when the user slows down as if to stop on the menu.</p>
+<p>It overrides the hover function.<!--more--></p>
+<p>It also has a timeout function so menus don't fly shut like css menus.</p>
+<p>How it overides css menus is the question - ie. this would mean the menu uses jquery and not css if hoverintent is used?</p>
+<p><a href=" http://www.thatsquality.com/articles/creating-delayed-drop-down-menus-in-jquery-without-losing-accessibility "> http://www.thatsquality.com/articles/creating-delayed-drop-down-menus-in-jquery-without-losing-accessibility </a></p>
+<p>Actually it may be better to do the following:</p>
+<p>$('#menu li ul').css({ display: "none", left: "auto"}); $('#menu li').hover(function() {</p>
+<p>$(this) .find('ul') .stop(true, true) .slideDown('fast');}, function() { $(this)</p>
+<p>.find('ul') .stop(true,true) .fadeOut('fast');});</p>
+<p>and replace hover with hoverintent.</p>
+<p>Of course display none is better replaced with absolute positioning for accessibility or the new technique which I cannot quite remember.</p>

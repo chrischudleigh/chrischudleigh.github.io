@@ -1,0 +1,21 @@
+<svg width="10" height="100" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <defs>
+  <linearGradient y2="0" x2="0.45703" y1="0.97656" x1="0.46094" id="svg_2">
+   <stop stop-color="#030a40" offset="0"/>
+   <stop stop-color="#33417a" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="0" x2="0.45703" y1="0.97656" x1="0.46094" id="svg_3">
+   <stop stop-color="#030a40" offset="0"/>
+   <stop stop-color="#33417a" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="0" x2="0.45703" y1="0.97656" x1="0.46094" id="svg_4">
+   <stop stop-color="#030a40" offset="0"/>
+   <stop stop-color="#33417a" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect transform="rotate(0.3299078345298767 3.945079803466819,48.209850311279325) " id="svg_5" height="105.64344" width="18.12547" y="-4.61187" x="-5.11765" stroke-width="0" stroke="#000000" fill="url(#svg_4)"/>
+ </g>
+</svg>

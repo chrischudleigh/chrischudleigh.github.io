@@ -1,0 +1,118 @@
+---
+layout: post
+title: CSS3 Selectors
+date: 2012-06-03 20:12:21.000000000 +10:00
+categories: []
+tags:
+- css
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: chris.chudleigh@gmail.com
+  display_name: chris
+  first_name: chris
+  last_name: ''
+---
+<p>CSS3 Selectors are supported by IE9+ and most modern browsers.<!--more--></p>
+<p>Common CSS3 Selectors include:</p>
+<table style="line-height: 2; font-size: 1.2em;">
+<caption>Overview of CSS 3 selector syntax</caption>
+<thead>
+<tr>
+<th scope="col">Pattern</th>
+<th scope="col">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E[att^=”val”]</td>
+<td>Matches any E element whose <code>att</code> attribute value begins with “val”.</td>
+</tr>
+<tr>
+<td>E[att$=”val”]</td>
+<td>Matches any E element whose <code>att</code> attribute value ends with “val”.</td>
+</tr>
+<tr>
+<td>E[att*=”val”]</td>
+<td>Matches any E element whose <code>att</code> attribute value contains the substring “val”.</td>
+</tr>
+<tr>
+<td>E:root</td>
+<td>Matches the document’s root element. In HTML, the root element is always the HTML element.</td>
+</tr>
+<tr>
+<td>E:nth-child(n)</td>
+<td>Matches any E element that is the n-th child of its parent.</td>
+</tr>
+<tr>
+<td>E:nth-last-child(n)</td>
+<td>Matches any E element that is the n-th child of its parent, counting from the last child.</td>
+</tr>
+<tr>
+<td>E:nth-of-type(n)</td>
+<td>Matches any E element that is the n-th of its type.</td>
+</tr>
+<tr>
+<td>E:nth-last-of-type(n)</td>
+<td>Matches any E element that is the n-th of its type, counting from the last sibling.</td>
+</tr>
+<tr>
+<td>E:last-child</td>
+<td>Matches any E element that is the last child of its parent.</td>
+</tr>
+<tr>
+<td>E:first-of-type</td>
+<td>Matches any E element that is the first of its type.</td>
+</tr>
+<tr>
+<td>E:last-of-type</td>
+<td>Matches any E element that is the last of its type.</td>
+</tr>
+<tr>
+<td>E:only-child</td>
+<td>Matches any E element that is the only child of its parent.</td>
+</tr>
+<tr>
+<td>E:only-of-type</td>
+<td>Matches any E element that is the only one of its type.</td>
+</tr>
+<tr>
+<td>E:empty</td>
+<td>Matches any E element that has no children (including text nodes).</td>
+</tr>
+<tr>
+<td>E:target</td>
+<td>Matches an E element that is the target of the referring URL.</td>
+</tr>
+<tr>
+<td>E:enabled</td>
+<td>Matches any user interface element (form control) E that is enabled.</td>
+</tr>
+<tr>
+<td>E:disabled</td>
+<td>Matches any user interface element (form control) E that is disabled.</td>
+</tr>
+<tr>
+<td>E:checked</td>
+<td>Matches any user interface element (form control) E that is checked.</td>
+</tr>
+<tr>
+<td>E::selection</td>
+<td>Matches the portion of an element E that is currently selected or highlighted by the user.</td>
+</tr>
+<tr>
+<td>E:not(s)</td>
+<td>Matches any E element that does not match the simple selector s.</td>
+</tr>
+<tr>
+<td>E ~ F</td>
+<td>Matches any F element that is preceded by an E element.</td>
+</tr>
+</tbody>
+</table>
+<p>Selectivizer can be used as a javascript polyfill.</p>
+<p>&nbsp;</p>

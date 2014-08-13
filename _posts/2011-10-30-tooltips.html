@@ -1,0 +1,32 @@
+---
+layout: post
+title: Tooltips
+date: 2011-10-30 11:05:33.000000000 +10:00
+categories: []
+tags:
+- css
+- jquery
+- tooltips
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  jabber_published: '1319936734'
+author:
+  login: admin
+  email: chris.chudleigh@gmail.com
+  display_name: chris
+  first_name: chris
+  last_name: ''
+---
+<p>Browser tooltips appear when using the title attribute in browsers.<!--more--></p>
+<p>Usually you style the text with a dotted underline to indicate a tooltip and change the cursor to a help icon.</p>
+<p>An info icon can be used as well.</p>
+<p>Problems:<br />
+These cannot be styled with CSS<br />
+These can only contain text</p>
+<p>Javascript can be used to grab the content of the title tag and place it in a generated div tag which can then be styled and then mouseovers to show and hide. You still cannot use rich text tho as the text is grabbed from the title tag.</p>
+<p>To do this you need to use an anchor tag is also used with a span tag inside which is hidden until the a tag is hovered over. Not sure if this works in safari. This may contain html. This method can be done with css only.</p>
+<p>Javascript can be used to add delay effects and to use ajax.</p>
+<p>The main problem with CSS only tooltips is they add extra code to the html which does not make sense for search engines or screenreaders. Probably better off using javascript tooltips as in progressive enhancement.</p>

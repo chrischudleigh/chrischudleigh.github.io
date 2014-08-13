@@ -1,0 +1,31 @@
+---
+layout: post
+title: Mamp and wordpress
+date: 2012-08-05 11:30:22.000000000 +10:00
+categories: []
+tags:
+- mamp
+- wordpress
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: chris.chudleigh@gmail.com
+  display_name: chris
+  first_name: chris
+  last_name: ''
+---
+<p>The local copy of wordpress stopped working for me. When I got a fibre connection with a new isp, I got a new ip and so wordpress was looking for the old ip address I had.<!--more--></p>
+<p><strong>Fix:</strong> Change the mysql database entry in wordpress for the url.</p>
+<p>While investigating, I decided it is better to create a virtual host eg. blog.local This is added in two places:</p>
+<p>See<a href=" http://sawmac.com/mamp/virtual/ "> http://sawmac.com/mamp/virtual/ </a> for details.</p>
+<p>If you place the website in your sites directory, wordpress also needs you to give the directory admin access it seems.</p>
+<p>To duplicate the remote site:</p>
+<ul>
+<li>Export and import the content</li>
+<li>Redo the widgets and the menus.</li>
+</ul>
+<p>&nbsp;</p>

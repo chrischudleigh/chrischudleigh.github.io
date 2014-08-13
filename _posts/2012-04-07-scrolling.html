@@ -1,0 +1,28 @@
+---
+layout: post
+title: Scrolling
+date: 2012-04-07 19:58:03.000000000 +10:00
+categories: []
+tags:
+- jquery
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+author:
+  login: admin
+  email: chris.chudleigh@gmail.com
+  display_name: chris
+  first_name: chris
+  last_name: ''
+---
+<p>Jquery has a scroll event which fires when a user updates the scroll position of an element.<!--more--></p>
+<p>To keep a floating menu on screen:</p>
+<p>Make its position relative/absolute</p>
+<p>$(window) creates a jquery instance of the window object.</p>
+<p>get the $(document).scrollTop() value and set the top of the menu 's css to this value.</p>
+<p>For smoother scrolling use animate and use stop as scroll fires alot.<br />
+$(window).scroll(function() { $('#navigation').stop() .animate({top: $(document).scrollTop()},'slow','easeOutBack');});</p>
+<p>I have actually done a nice floating menu with classes.</p>
+<p>The scrollTo plugin is also quite handy.</p>

@@ -1,0 +1,43 @@
+/* 
+Large stylesheet
+ 
+1 Layout
+2 Backgrounds
+
+/* -------------------------------------------------------------------------------------- 
+Layout
+-------------------------------------------------------------------------------------- */
+#main {
+float:left;
+width:70%;
+padding-top:2em;
+}
+
+body.page #main {
+float:none;
+width:100%;
+}
+
+body.page #main .gutter {
+padding: 0 2%;
+}
+
+aside#page  {
+margin-left:72%;
+padding-top:1.9em;
+
+}
+
+nav {
+padding-top:0.5em;
+padding-left:15px;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Backgrounds
+-------------------------------------------------------------------------------------- */
+aside#page {
+color:#000;
+background-color:#fff;
+}
+
