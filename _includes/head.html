@@ -70,11 +70,12 @@
         <h2 class="structural">Main navigation</h2>
 	  <nav class="nav-primary" role="navigation" class="group">
     <ul id="navigation" >
-        {% for p in site.pages %}
-        <li>
-        	<a {% if p.url == page.url %}class="active group"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
-        </li>
-        {% endfor %}
+        {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+
+	
+	<li><a {% if location == 'home' %}class="active" {% endif %}href="/index.html">Home</a></li>
+	<li><a {% if location == 'contact' %}class="active" {% endif %}href="/contact.html">Contact</a></li>
+
     </ul>
 
 		</nav>
