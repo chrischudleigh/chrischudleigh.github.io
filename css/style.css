@@ -129,7 +129,7 @@ border:none;
 }
 
 #searchsubmit {
-background: transparent url(images/magnifyingglass-8bit.png) no-repeat top left; 
+background: transparent url(/images/magnifyingglass-8bit.png) no-repeat top left; 
 width:16px;
 height:16px;
 text-indent: -1000em;
@@ -156,8 +156,8 @@ Backgrounds - svg in css bg - ie9+
 -------------------------------------------------------------------------------------- */
 header[role] {
 color:#fff;
-background:#28285a url(images/bg.svg) repeat top left;
-background:rgba(40,40,90,0.9) url(images/bg.svg) repeat-x top left;
+background:#28285a url(/images/bg.svg) repeat top left;
+background:rgba(40,40,90,0.9) url(/images/bg.svg) repeat-x top left;
 background-size:contain;
 }
 .ie6 header[role] {
@@ -266,7 +266,7 @@ letter-spacing:3px;
 color:#50b4d2;
 color:rgba(80,180,210,0.8);
 
-background:url(images/icons-8bit.png) no-repeat 8px center;
+background:url(/images/icons-8bit.png) no-repeat 8px center;
 border-radius:5px;
 border:1px solid #7bc0f3;
 margin:5px 0;
@@ -585,19 +585,19 @@ color:#fff;
 
 /* external link icon for external links  */
 a[href^="http://"] {
-background:url(images/external_link_icon.gif) no-repeat right top;
+background:url(/images/external_link_icon.gif) no-repeat right top;
 padding-right:15px;
 } 
 
  /* remove icon for own domain  */
-a[href^="http://www.chrischudleigh.net"],a[href^="http://chrischudleigh.net"] ,a[href^="http://blog.local:8888"] ,a.icon {
+a[href^="http://www.chrischudleigh.net"],a[href^="http://chrischudleigh.github.io"],a[href^="http://chrischudleigh.net"] ,a[href^="http://blog.local:8888"] ,a.icon {
 background:url(none);
 padding-right:0;
 }
 
 /* mail link icon for email links  */
 #main a[href^="mailto:"] {
-background:url(images/Mail%20Icon.jpg) no-repeat right -14px;
+background:url(/images/Mail%20Icon.jpg) no-repeat right -14px;
 padding-right:35px;
 } 
 

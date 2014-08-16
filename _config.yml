@@ -2,3 +2,4 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
 paginate: 5
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
