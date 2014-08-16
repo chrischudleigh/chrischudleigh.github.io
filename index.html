@@ -7,14 +7,18 @@ title: Home
   
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
+    <article>
+<header>
+
+    
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <aside><span class="date">{{ post.date | date_to_string }}</span></aside></header>
+    
   </p>
-  <div class="content">
+  <div class="post">
       {{ post.excerpt }}
       <p><a href="{{ post.url }}">read more</a></p>
-  </div>
+  </div><footer></footer></article>
 {% endfor %}
 
 
