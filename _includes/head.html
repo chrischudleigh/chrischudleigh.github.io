@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
 	<title>{{ page.title }}</title>
 	<meta charset="utf-8" />
@@ -13,10 +9,6 @@
     <link rel="stylesheet" media="screen, projection" href="/css/style.css" />
     <link rel="stylesheet" media="only all and (min-width: 680px)" href="/css/medium.css" />
     <link rel="stylesheet" media="only all and (min-width: 860px)" href="/css/large.css" />
-    <!--[if lt IE 9]>
-    	<link rel="stylesheet" media="screen" href="/css/medium.css" />
-		<link rel="stylesheet" media="screen" href="/css/large.css" />
-    <![endif]-->
 	<link rel="stylesheet" media="print" href="/css/print.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
 	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
@@ -44,17 +36,10 @@
         aria roles
         using hover and focus styles
     -->
-<!-- enable HTML5 elements in IE7+8 -->
-<!--[if lt IE 9]>
-<script src="/js/html5shiv.js"></script>
 
-<script src="/js/selectivizr-min.js"></script>
-<![endif]-->
 </head>
 
 <body id="">
-<!-- skip links required for ie8 and below -->
-<ul id="access" class="group"><li><a href="#main">Skip to main content</a></li></ul>
 <div id="wrapper">
 	<header role="banner" class="group">
   		<div class="gutter group">

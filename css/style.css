@@ -85,8 +85,6 @@ vertical-align:middle;
 display:inline;
 }
 
-.ie6 header[role] {height:35px;}
-
 #content {
 margin:0;
 padding:0;
@@ -147,9 +145,7 @@ clear:both;
 visibility:hidden;
 }
 
-.ie6 .group , .ie7 .group{ /* give layout to ie6, and ie7 */
-zoom:1;
-}
+
 
 /* -------------------------------------------------------------------------------------- 
 Backgrounds - svg in css bg - ie9+
@@ -160,9 +156,7 @@ background:#28285a url(/images/bg.svg) repeat top left;
 background:rgba(40,40,90,0.9) url(/images/bg.svg) repeat-x top left;
 background-size:contain;
 }
-.ie6 header[role] {
-background:#28285a 
-}
+
 
 #content {
 color:#000;
@@ -231,11 +225,7 @@ color:#555;
 -webkit-text-size-adjust:100%; /* fix ios rotation bug */
 }
 
-.ie6 body {
-font-size:65.5%; 
-font-family:Verdana, Helvetica, Arial, sans-serif;
 
-}
 
 #access {
 font-family:Verdana, Helvetica, Arial, sans-serif;
@@ -374,7 +364,6 @@ footer[role]  img.icon {
  opacity:0.6;
   filter:alpha(opacity=60);
 }
-.ie6 footer[role] img.icon {filter:none}
 
 footer[role] li a {
 display:block;
@@ -399,9 +388,7 @@ padding:0;
 margin:0;
 }
 
-.ie7 img {
--ms-interpolation-mode:bicubic;/* improve image rendering ie7 */
-}
+
 
 .alignnone {
     margin: 5px 20px 20px 0;
@@ -536,10 +523,7 @@ footer[role]  img.icon:hover {
   filter:alpha(opacity=100);
 }
 
-/* avoid hover background change bug in ie6 */
-.ie6 #primarynav ul#navigation li a:hover {
-background-color: transparent;
-}
+
 
 #main a:link, aside#page a:link {
 color:#2b3871;
@@ -553,21 +537,14 @@ color:#555;
 background-color:#ccc;
 }
 
-/* avoid hover background change bug in ie6 */
-.ie6 #main a:hover {
-color: #009933;
-background-color: transparent;
-}
+
+
 
 aside#page a:hover {
 background-color:#fff;
 }
 
-/* avoid hover background change bug in ie6 */
-.ie6 aside#page a:hover {
-color:#009933;
-background-color: transparent;
-}
+
 
 #main a:focus, aside#page a:focus  {
 color:maroon;

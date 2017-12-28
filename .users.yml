@@ -1,0 +1,9 @@
+users:
+- id: 7789eaf1-979e-4d05-9e2d-a9584c36b759
+  name: chris
+  email: chris.chudleigh@gmail.com
+  hash: $2a$10$xY8UIow/0MjQGOtjxxq1NuMwo1hwjhtMBHI3B8iY2Vuu7BOiPCmqe
+- id: 76782125-6288-4fd6-be07-16dfe564e59d
+  name: chris
+  email: chris.chudleigh@icloud.com
+  hash: $2a$10$dHE/O1a5yAW9AZ/vWli6huslJMSf7q1AnTjDTAAFMSRoiTgUIsw.K

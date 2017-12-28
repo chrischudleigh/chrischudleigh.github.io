@@ -78,10 +78,6 @@ border-radius:4px;
 box-shadow:1px 1px 5px #DDDFEB;
 }
 
-.ie6 #main article aside{ 
-left:-14%;
-}
-
 
 footer[role] {
 border-bottom-right-radius:4px;
@@ -160,10 +156,7 @@ nav ul#navigation li + li + li + li + li {
 margin-right:0;
 }
 
-.ie6 nav 
-{
-width:60%;
-}
+
 
 /* add tab indicators - buggy ie8? */
 .current_page_item a:after {
@@ -193,9 +186,7 @@ border-radius:14px;
 text-transform:uppercase;
 }
 
-.ie6 nav ul#navigation li a {
-font-size:0.8em;
-}
+
 
 #main p {
 margin-top:0;
