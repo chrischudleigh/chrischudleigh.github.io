@@ -4,3 +4,4 @@ pygments: true
 highlighter: rouge
 paginate: 5
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+future: true
